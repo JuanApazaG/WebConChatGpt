@@ -1,44 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi primera página web</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Mi Portafolio Personal</title>
+  <style>
+    /* Estilos globales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilos para el encabezado */
+    header {
+      background-color: #AEC6CF;
+      color: #B22222;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    /* Estilos para el contenido principal */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 30px;
+      background-color: #F49AC2; /* Cambiar el color de fondo aquí */
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .sobreMi {
+        background-color: red;
+    }
+
+    .Experiencia {
+        background-color: aqua;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    /* Estilos para las listas */
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+    header img {
+      width: 350px; /* Ajustar el ancho de la imagen aquí */
+      height: 350px; /* Ajustar la altura de la imagen aquí */
+      border-radius: 50%;
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    p.footer-text {
+      margin: 0;
+      font-size: 14px;
+    }
+    
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenido a mi página web</h1>
-    </header>
+  <header>
+    <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Logo" width="100" height="100">
+    <h1>Tu Nombre</h1>
+  </header>
+  
+  <main>
+    <section class="sobreMi">
+      <h2>Sobre mí</h2>
+      <p>Apasionado desarrollador web con experiencia en HTML, CSS y JavaScript. Resolutivo, creativo y enfocado en crear soluciones innovadoras.</p>
+    </section>
     
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+    <section class="Experiencia">
+      <h2>Experiencia Laboral</h2>
+      <ul>
+        <li>Empresa 1 - Desarrollador web (2019-2021)</li>
+        <li>Empresa 2 - Diseñador UI/UX (2017-2019)</li>
+      </ul>
+    </section>
     
-    <main>
-        <section>
-            <h2>Acerca de</h2>
-            <p>¡Hola! Soy un párrafo de ejemplo.</p>
-        </section>
-        
-        <section>
-            <h2>Contacto</h2>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
-                
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-    </main>
+    <section>
+      <h2>Proyectos Destacados</h2>
+      <ul>
+        <li>Proyecto 1 - Descripción breve del proyecto y tu contribución</li>
+        <li>Proyecto 2 - Descripción breve del proyecto y tu contribución</li>
+      </ul>
+    </section>
     
-    <footer>
-        <p>&copy; 2023 Mi página web</p>
-    </footer>
+    <section>
+      <h2>Educación</h2>
+      <ul>
+        <li>Título universitario en Ingeniería de Software - Universidad XYZ (2016-2020)</li>
+        <li>Certificado en Desarrollo Web - Plataforma de Aprendizaje ABC (2015)</li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+    <p class="footer-text">Derechos de autor &copy; 2023 Tu Nombre</p>
+  </footer>
 </body>
 </html>
